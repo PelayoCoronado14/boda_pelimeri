@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_bg">
+
+    <TextView
+        android:id="@+id/home_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_view_title"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="34dp"
+        android:gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_view_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/home_view_card_view_text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_view_card_view_title"
+                android:textColor="@color/black"
+                android:textSize="34dp"
+                android:gravity="center_horizontal"/>
+
+
+            <TextView
+                android:id="@+id/home_view_card_view_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_view_card_view_text"
+                android:textColor="@color/cardViewText"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/home_view_card_view_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/home_view_card_view_text_hint"
+                    android:imeOptions="actionGo"
+                    android:textColor="@color/cardViewText"
+                    android:textColorHint="@color/cardViewHint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/home_view_card_view_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="@string/home_view_card_view_text_button"
+                android:textSize="@dimen/margin_smaller"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
