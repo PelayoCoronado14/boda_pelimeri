@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_smaller">
+
+        <TextView
+            android:id="@+id/questionary_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smallest"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textSize="22sp"
+            tools:text="Question 111111111?" />
+
+        <LinearLayout
+            android:id="@+id/questionary_view_progressbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_smaller"
+            android:layout_marginStart="@dimen/margin_smallest"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/questionary_view_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/margin_null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/questionary_view_progressbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_smaller"
+                android:textColorHint="@color/colorHint"
+                android:textSize="14sp"
+                tools:text="0/10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/questionary_view_answer_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smallest"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/margin_smaller"
+            android:textColor="@color/colorHint"
+            android:textSize="18sp"
+            tools:text="Apple" />
+
+        <TextView
+            android:id="@+id/questionary_view_answer_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smallest"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/margin_smaller"
+            android:textColor="@color/colorHint"
+            android:textSize="18sp"
+            tools:text="Google" />
+
+        <TextView
+            android:id="@+id/questionary_view_answer_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smallest"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/margin_smaller"
+            android:textColor="@color/colorHint"
+            android:textSize="18sp"
+            tools:text="Android Inc." />
+
+        <TextView
+            android:id="@+id/questionary_view_answer_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smallest"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/margin_smaller"
+            android:textColor="@color/colorHint"
+            android:textSize="18sp"
+            tools:text="Nokia" />
+
+        <Button
+            android:id="@+id/questionary_view_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginHorizontal="@dimen/margin_smallest"
+            android:background="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
