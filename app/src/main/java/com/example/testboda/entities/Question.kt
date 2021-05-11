@@ -8,5 +8,6 @@ data class Question(
         val answerTwo: Int,
         val answerThree: Int,
         val answerFour: Int,
+        var answerSelected: Int,
         val correctAnswer: Int
 )

@@ -3,7 +3,8 @@ package com.example.testboda.entities
 import com.example.testboda.R
 
 object Constants {
-    const val USER_NAME: String = "user_name"
+    const val KEY_USER_NAME: String = "key_user_name"
+    const val KEY_TIMESTAMP: String = "key_timestamp"
     const val TOTAL_QUESTIONS: String = "total_questions"
     const val CORRECT_ANSWER: String = "correct_answers"
 
@@ -19,7 +20,8 @@ object Constants {
             R.string.questionary_question_1_answer_2,
             R.string.questionary_question_1_answer_3,
             R.string.questionary_question_1_answer_4,
-            1
+            0,
+            0
         )
 
         questionsList.add(que1)
@@ -33,7 +35,8 @@ object Constants {
             R.string.questionary_question_2_answer_2,
             R.string.questionary_question_2_answer_3,
             R.string.questionary_question_2_answer_4,
-            3
+            0,
+                0
         )
 
         questionsList.add(que2)
@@ -47,7 +50,8 @@ object Constants {
             R.string.questionary_question_3_answer_2,
             R.string.questionary_question_3_answer_3,
             R.string.questionary_question_3_answer_4,
-            4
+            0,
+                0
         )
 
         questionsList.add(que3)
@@ -61,7 +65,8 @@ object Constants {
             R.string.questionary_question_4_answer_2,
             R.string.questionary_question_4_answer_3,
             R.string.questionary_question_4_answer_4,
-            2
+                0,
+                0
         )
 
         questionsList.add(que4)
@@ -75,7 +80,8 @@ object Constants {
             R.string.questionary_question_5_answer_2,
             R.string.questionary_question_5_answer_3,
             R.string.questionary_question_5_answer_4,
-            3
+                0,
+                0
         )
 
         questionsList.add(que5)
@@ -89,7 +95,8 @@ object Constants {
             R.string.questionary_question_6_answer_2,
             R.string.questionary_question_6_answer_3,
             R.string.questionary_question_6_answer_4,
-            1
+                0,
+                0
         )
 
         questionsList.add(que6)
@@ -103,7 +110,8 @@ object Constants {
             R.string.questionary_question_7_answer_2,
             R.string.questionary_question_7_answer_3,
             R.string.questionary_question_7_answer_4,
-            3
+                0,
+                0
         )
 
         questionsList.add(que7)
@@ -117,7 +125,8 @@ object Constants {
             R.string.questionary_question_8_answer_2,
             R.string.questionary_question_8_answer_3,
             R.string.questionary_question_8_answer_4,
-            4
+                0,
+                0
         )
 
         questionsList.add(que8)
@@ -131,7 +140,8 @@ object Constants {
             R.string.questionary_question_9_answer_2,
             R.string.questionary_question_9_answer_3,
             R.string.questionary_question_9_answer_4,
-            2
+                0,
+                0
         )
 
         questionsList.add(que9)
@@ -145,7 +155,8 @@ object Constants {
             R.string.questionary_question_10_answer_2,
             R.string.questionary_question_10_answer_3,
             R.string.questionary_question_10_answer_4,
-            1
+                0,
+                0
         )
 
         questionsList.add(que10)

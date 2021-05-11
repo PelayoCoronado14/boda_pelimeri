@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".views.MainActivity"
     android:background="@drawable/img_bg">
 
     <TextView
-        android:id="@+id/home_view_title"
+        android:id="@+id/main_view_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/home_view_title"
+        android:text="@string/main_view_title"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:fontFamily="@font/dancing_script"
@@ -21,7 +21,7 @@
         android:gravity="center_horizontal"/>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/home_view_card_view"
+        android:id="@+id/main_view_card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -37,20 +37,21 @@
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/home_view_card_view_text_1"
+                android:id="@+id/main_view_card_view_text_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/home_view_card_view_title"
+                android:text="@string/main_view_card_view_title"
                 android:textColor="@color/black"
                 android:textSize="34dp"
                 android:gravity="center_horizontal"/>
 
 
             <TextView
-                android:id="@+id/home_view_card_view_text_2"
+                android:id="@+id/main_view_card_view_text_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/home_view_card_view_text"
+                android:layout_marginTop="@dimen/margin_smaller"
+                android:text="@string/main_view_card_view_text"
                 android:textColor="@color/colorText"
                 android:textSize="16dp"
                 android:gravity="center_horizontal"/>
@@ -58,26 +59,26 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/margin_smallest"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/home_view_card_view_text_input"
+                    android:id="@+id/main_view_card_view_text_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/home_view_card_view_text_hint"
+                    android:hint="@string/main_view_card_view_text_hint"
                     android:imeOptions="actionGo"
                     android:textColor="@color/colorText"
                     android:textColorHint="@color/colorHint"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/home_view_card_view_button"
+                android:id="@+id/main_view_card_view_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:text="@string/home_view_card_view_text_button"
+                android:text="@string/main_view_card_view_text_button"
                 android:textSize="@dimen/margin_smaller"
                 android:textColor="@android:color/white"/>
         </LinearLayout>

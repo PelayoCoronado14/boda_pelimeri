@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestBoda">
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">
@@ -20,7 +20,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".QuizQuestionsActivity"
+            android:name=".views.QuizQuestionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".views.QuizResultsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">

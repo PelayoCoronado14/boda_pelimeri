@@ -1,34 +1,34 @@
-package com.example.testboda
+package com.example.testboda.views
 
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.testboda.R
 import com.example.testboda.entities.Constants
+import com.example.testboda.entities.Constants.KEY_USER_NAME
 import com.example.testboda.entities.Question
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
 
-    private var currentQuestion: Int = 0
-    private var questionsList: ArrayList<Question>? = null
-    private var selectedOptionPosition: Int = 0
-    private var correctAnswers: Int = 0
+    companion object{
+        private const val FIRST_QUESTION = 1
+    }
+
+    private var currentQuestion: Int = 1
     private var userName: String? = null
 
+    private lateinit var questionsList: ArrayList<Question>
     private lateinit var title : TextView
     private lateinit var answer1 : TextView
     private lateinit var answer2 : TextView
     private lateinit var answer3 : TextView
     private lateinit var answer4 : TextView
-    private lateinit var proressBar : ProgressBar
-    private lateinit var proressBarText : TextView
     private lateinit var button: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,12 +39,26 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
         answer2 = findViewById(R.id.questionary_view_answer_two)
         answer3 = findViewById(R.id.questionary_view_answer_three)
         answer4 = findViewById(R.id.questionary_view_answer_four)
-        proressBar = findViewById(R.id.questionary_view_progressbar)
-        proressBarText = findViewById(R.id.questionary_view_progressbar_text)
         button = findViewById(R.id.questionary_view_button)
+        getExtras()
         initializeQuestionsList()
         initializeView()
 
+    }
+
+    override fun onBackPressed() {
+        if(currentQuestion > FIRST_QUESTION){
+            currentQuestion --
+            setUI()
+        } else {
+            return
+        }
+    }
+
+    private fun getExtras(){
+        intent.extras.let {
+            userName = it?.getString(KEY_USER_NAME)
+        }
     }
 
     private fun initializeQuestionsList(){
@@ -66,26 +80,28 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     }
 
     private fun setUI(){
+        resetPreviousSelection()
         setTexts()
         setProgressBar()
         setButton()
+        setAnswerIfPreviouslySelected()
     }
 
     private fun setTexts(){
-        title.text = getString(questionsList?.get(currentQuestion)?.question?: 0)
-        answer1.text = getString(questionsList?.get(currentQuestion)?.answerOne?: 0)
-        answer2.text = getString(questionsList?.get(currentQuestion)?.answerTwo?: 0)
-        answer3.text = getString(questionsList?.get(currentQuestion)?.answerThree?: 0)
-        answer4.text = getString(questionsList?.get(currentQuestion)?.answerFour?: 0)
+        title.text = getString(questionsList[currentQuestion-1].question)
+        answer1.text = getString(questionsList[currentQuestion-1].answerOne)
+        answer2.text = getString(questionsList[currentQuestion-1].answerTwo)
+        answer3.text = getString(questionsList[currentQuestion-1].answerThree)
+        answer4.text = getString(questionsList[currentQuestion-1].answerFour)
     }
 
     private fun setProgressBar(){
-        proressBar.progress = currentQuestion + 1
-        proressBarText.text = (currentQuestion+1).toString() + "/" +questionsList?.size
+        findViewById<ProgressBar>(R.id.questionary_view_progressbar).progress = currentQuestion
+        findViewById<TextView>(R.id.questionary_view_progressbar_text).text = (currentQuestion).toString() + "/" +questionsList.size
     }
 
     private fun setButton(){
-        if(currentQuestion+1 < questionsList?.size?:0){
+        if(currentQuestion < questionsList.size){
             button.text = getString(R.string.questionary_button_text_next)
         }else{
             button.text = getString(R.string.questionary_button_text_finish)
@@ -103,21 +119,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     }
 
     private fun onAnswerSelected(answerView: TextView, selectedOption: Int){
-
-            defaultOptionsView()
-
-            selectedOptionPosition = selectedOption
-
-        answerView.setTextColor(getColor(R.color.colorText))
-        answerView.setTypeface(answerView.typeface, Typeface.BOLD)
-        answerView.background = ContextCompat.getDrawable(
-                    this@QuizQuestionsActivity,
-                    R.drawable.selected_option_border_bg
-            )
-
+        resetPreviousSelection()
+        selectAnswer(answerView)
+        questionsList[currentQuestion-1].answerSelected = selectedOption
     }
 
-    private fun defaultOptionsView() {
+    private fun resetPreviousSelection() {
         val options = ArrayList<TextView>()
         options.add(0, answer1)
         options.add(1, answer2)
@@ -134,28 +141,38 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
         }
     }
 
-    private fun onButtonMarked(){
-
-        // check if correct answert
-
-        if(currentQuestion+1 < questionsList?.size?:0){
-            currentQuestion ++
-
-            setUI()
-        }else{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+    private fun setAnswerIfPreviouslySelected(){
+        when(questionsList[currentQuestion-1].answerSelected){
+            0 -> return
+            1 -> selectAnswer(answer1)
+            2 -> selectAnswer(answer2)
+            3 -> selectAnswer(answer3)
+            4 -> selectAnswer(answer4)
         }
-
-
-
-
-
-        // go to next question
-
-
-
     }
 
+    private fun selectAnswer(answerView: TextView){
+        answerView.setTextColor(getColor(R.color.colorText))
+        answerView.setTypeface(answerView.typeface, Typeface.BOLD)
+        answerView.background = ContextCompat.getDrawable(
+                this@QuizQuestionsActivity,
+                R.drawable.selected_option_border_bg)
+    }
 
+    private fun onButtonMarked(){
+        if(isLastQuestion()){
+            val intent = Intent(this, QuizResultsActivity::class.java)
+            intent.putExtra(KEY_USER_NAME, userName)
+            startActivity(intent)
+            finish()
+        }else{
+            currentQuestion ++
+            resetPreviousSelection()
+            setUI()
+        }
+    }
+
+    private fun isLastQuestion() : Boolean{
+        return currentQuestion >= questionsList?.size?:0
+    }
 }
