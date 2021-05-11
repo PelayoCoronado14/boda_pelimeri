@@ -148,6 +148,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
             2 -> selectAnswer(answer2)
             3 -> selectAnswer(answer3)
             4 -> selectAnswer(answer4)
+
         }
     }
 
