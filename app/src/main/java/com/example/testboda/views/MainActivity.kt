@@ -1,14 +1,14 @@
 package com.example.testboda.views
 
-import android.app.ActivityOptions
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatEditText
 import com.example.testboda.R
+import com.example.testboda.entities.Constants.KEY_TIMESTAMP
 import com.example.testboda.entities.Constants.KEY_USER_NAME
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val intent = Intent(this@MainActivity, QuizQuestionsActivity::class.java)
                 intent.putExtra(KEY_USER_NAME, textInput.text.toString())
+                intent.putExtra(KEY_TIMESTAMP, System.currentTimeMillis() / 1000)
                 startActivity(intent)
                 finish()
             }

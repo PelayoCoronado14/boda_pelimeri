@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">app_name</string>
+    <string name="app_name">The Day</string>
     <string name="main_view_title">Pelayo &amp; Meriel</string>
     <string name="main_view_card_view_title">¡¡Bienvenidos!!</string>
     <string name="main_view_card_view_text">Introduce tu nombre y demuestra cuanto nos conoces</string>
@@ -58,6 +58,10 @@
     <string name="questionary_question_10_answer_2">TestBoda</string>
     <string name="questionary_question_10_answer_3">TestBoda</string>
     <string name="questionary_question_10_answer_4">TestBoda</string>
+    <string name="results_view_text_title_fail">Has acertado menos que Higuain borracho</string>
+    <string name="results_view_text_title_good">%s el resultado es %s</string>
+    <string name="results_view_text_title_excelent">Ni mi madre sabe tanto :D</string>
+    <string name="results_view_text_result">%s el resultado es %s y has tardado %s</string>
     <string name="results_view_text_title">Resultado</string>
     <string name="results_view_button_text">Enviar</string>
 

@@ -3,13 +3,14 @@ package com.example.testboda.entities
 import com.example.testboda.R
 
 object Constants {
+    const val KEY_QUESTION_LIST: String = "key_question_list"
     const val KEY_USER_NAME: String = "key_user_name"
     const val KEY_TIMESTAMP: String = "key_timestamp"
     const val TOTAL_QUESTIONS: String = "total_questions"
     const val CORRECT_ANSWER: String = "correct_answers"
 
     fun getQuestions(): ArrayList<Question> {
-        val questionsList = ArrayList<Question>()
+        val questionList = ArrayList<Question>()
 
         // 1
         val que1 = Question(
@@ -21,10 +22,10 @@ object Constants {
             R.string.questionary_question_1_answer_3,
             R.string.questionary_question_1_answer_4,
             0,
-            0
+            2
         )
 
-        questionsList.add(que1)
+        questionList.add(que1)
 
         // 2
         val que2 = Question(
@@ -36,10 +37,10 @@ object Constants {
             R.string.questionary_question_2_answer_3,
             R.string.questionary_question_2_answer_4,
             0,
-                0
+                1
         )
 
-        questionsList.add(que2)
+        questionList.add(que2)
 
         // 3
         val que3 = Question(
@@ -54,7 +55,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que3)
+        questionList.add(que3)
 
         // 4
         val que4 = Question(
@@ -69,7 +70,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que4)
+        questionList.add(que4)
 
         // 5
         val que5 = Question(
@@ -84,7 +85,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que5)
+        questionList.add(que5)
 
         // 6
         val que6 = Question(
@@ -99,7 +100,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que6)
+        questionList.add(que6)
 
         // 7
         val que7 = Question(
@@ -114,7 +115,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que7)
+        questionList.add(que7)
 
         // 8
         val que8 = Question(
@@ -129,7 +130,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que8)
+        questionList.add(que8)
 
         // 9
         val que9 = Question(
@@ -144,7 +145,7 @@ object Constants {
                 0
         )
 
-        questionsList.add(que9)
+        questionList.add(que9)
 
         // 10
         val que10 = Question(
@@ -159,8 +160,8 @@ object Constants {
                 0
         )
 
-        questionsList.add(que10)
+        questionList.add(que10)
 
-        return questionsList
+        return questionList
     }
 }

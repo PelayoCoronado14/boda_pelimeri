@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.testboda.R
 import com.example.testboda.entities.Constants
+import com.example.testboda.entities.Constants.KEY_QUESTION_LIST
+import com.example.testboda.entities.Constants.KEY_TIMESTAMP
 import com.example.testboda.entities.Constants.KEY_USER_NAME
 import com.example.testboda.entities.Question
 
@@ -22,8 +24,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
 
     private var currentQuestion: Int = 1
     private var userName: String? = null
+    private var userTime: Long? = null
 
-    private lateinit var questionsList: ArrayList<Question>
+    private lateinit var questionList: ArrayList<Question>
     private lateinit var title : TextView
     private lateinit var answer1 : TextView
     private lateinit var answer2 : TextView
@@ -41,7 +44,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
         answer4 = findViewById(R.id.questionary_view_answer_four)
         button = findViewById(R.id.questionary_view_button)
         getExtras()
-        initializeQuestionsList()
+        initializeQuestionList()
         initializeView()
 
     }
@@ -58,11 +61,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     private fun getExtras(){
         intent.extras.let {
             userName = it?.getString(KEY_USER_NAME)
+            userTime= it?.getLong(KEY_TIMESTAMP)
         }
     }
 
-    private fun initializeQuestionsList(){
-        questionsList = Constants.getQuestions()
+    private fun initializeQuestionList(){
+        questionList = Constants.getQuestions()
     }
 
     private fun initializeView(){
@@ -88,20 +92,20 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     }
 
     private fun setTexts(){
-        title.text = getString(questionsList[currentQuestion-1].question)
-        answer1.text = getString(questionsList[currentQuestion-1].answerOne)
-        answer2.text = getString(questionsList[currentQuestion-1].answerTwo)
-        answer3.text = getString(questionsList[currentQuestion-1].answerThree)
-        answer4.text = getString(questionsList[currentQuestion-1].answerFour)
+        title.text = getString(questionList[currentQuestion-1].question)
+        answer1.text = getString(questionList[currentQuestion-1].answerOne)
+        answer2.text = getString(questionList[currentQuestion-1].answerTwo)
+        answer3.text = getString(questionList[currentQuestion-1].answerThree)
+        answer4.text = getString(questionList[currentQuestion-1].answerFour)
     }
 
     private fun setProgressBar(){
         findViewById<ProgressBar>(R.id.questionary_view_progressbar).progress = currentQuestion
-        findViewById<TextView>(R.id.questionary_view_progressbar_text).text = (currentQuestion).toString() + "/" +questionsList.size
+        findViewById<TextView>(R.id.questionary_view_progressbar_text).text = (currentQuestion).toString() + "/" +questionList.size
     }
 
     private fun setButton(){
-        if(currentQuestion < questionsList.size){
+        if(currentQuestion < questionList.size){
             button.text = getString(R.string.questionary_button_text_next)
         }else{
             button.text = getString(R.string.questionary_button_text_finish)
@@ -121,7 +125,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     private fun onAnswerSelected(answerView: TextView, selectedOption: Int){
         resetPreviousSelection()
         selectAnswer(answerView)
-        questionsList[currentQuestion-1].answerSelected = selectedOption
+        questionList[currentQuestion-1].answerSelected = selectedOption
     }
 
     private fun resetPreviousSelection() {
@@ -142,7 +146,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     }
 
     private fun setAnswerIfPreviouslySelected(){
-        when(questionsList[currentQuestion-1].answerSelected){
+        when(questionList[currentQuestion-1].answerSelected){
             0 -> return
             1 -> selectAnswer(answer1)
             2 -> selectAnswer(answer2)
@@ -164,6 +168,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
         if(isLastQuestion()){
             val intent = Intent(this, QuizResultsActivity::class.java)
             intent.putExtra(KEY_USER_NAME, userName)
+            intent.putExtra(KEY_TIMESTAMP, userTime)
+            intent.putExtra(KEY_QUESTION_LIST, questionList)
             startActivity(intent)
             finish()
         }else{
@@ -174,6 +180,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
     }
 
     private fun isLastQuestion() : Boolean{
-        return currentQuestion >= questionsList?.size?:0
+        return currentQuestion >= questionList?.size?:0
     }
 }
