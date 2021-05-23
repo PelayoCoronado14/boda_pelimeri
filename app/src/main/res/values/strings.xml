@@ -64,5 +64,7 @@
     <string name="results_view_text_result">%s el resultado es %s y has tardado %s</string>
     <string name="results_view_text_title">Resultado</string>
     <string name="results_view_button_text">Enviar</string>
-
+    <string name="results_view_dialog_title">¡Se estan enviando las respuestas!</string>
+    <string name="results_view_dialog_subtitle">Por favor espere...</string>
+    <string name="results_view_test_finished">¡¡¡Gracias por participar!!!</string>
 </resources>

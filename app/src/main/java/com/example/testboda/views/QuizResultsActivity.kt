@@ -2,7 +2,9 @@ package com.example.testboda.views
 
 import android.app.ProgressDialog
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -10,14 +12,18 @@ import com.example.testboda.R
 import com.example.testboda.entities.Constants.KEY_QUESTION_LIST
 import com.example.testboda.entities.Constants.KEY_TIMESTAMP
 import com.example.testboda.entities.Constants.KEY_USER_NAME
+import com.example.testboda.entities.Constants.SENDER_EMAIL
+import com.example.testboda.entities.Constants.SENDER_PASSWORD
 import com.example.testboda.entities.Question
 import com.example.testboda.mail.GMailSender
+import java.sql.Time
 
 class QuizResultsActivity :AppCompatActivity(){
     private var userName : String? = null
     private var userResult : Int = 0
     private var userTime : Long? = 0L
     private lateinit var questionList : ArrayList<Question>
+    private var answeredList : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +52,7 @@ class QuizResultsActivity :AppCompatActivity(){
             if(question.answerSelected == question.correctAnswer){
                 userResult++
             }
+            answeredList = answeredList + question.answerSelected.toString() + ", "
         }
     }
 
@@ -66,21 +73,19 @@ class QuizResultsActivity :AppCompatActivity(){
     private fun setListeners(){
         findViewById<Button>(R.id.questionary_results_button).setOnClickListener{
             sendResultsByEmail()
+            finishQuiz()
         }
     }
 
     private fun sendResultsByEmail(){
         val dialog = ProgressDialog(this)
-        dialog.setTitle("Sending Email")
-        dialog.setMessage("Please wait")
+        dialog.setTitle(getString(R.string.results_view_dialog_title))
+        dialog.setMessage(getString(R.string.results_view_dialog_subtitle))
         dialog.show()
         val sender = Thread(Runnable {
             try {
-                val sender = GMailSender("bodapelimeri@gmail.com", "Bodapelimeri1007!")
-                sender.sendMail(getString(R.string.results_view_text_result, userName, userResult.toString(), getUserTime()),
-                        "This is the message body",
-                        "bodapelimeri@gmail.com",
-                        "bodapelimeri@gmail.com")
+                val sender = GMailSender(SENDER_EMAIL, SENDER_PASSWORD)
+                sender.sendMail(getSubject(), answeredList, SENDER_EMAIL, SENDER_EMAIL)
                 dialog.dismiss()
             } catch (e: Exception) {
                 Log.e("mylog", "Error: " + e.message)
@@ -89,16 +94,23 @@ class QuizResultsActivity :AppCompatActivity(){
         sender.start()
     }
 
+    private fun getSubject():String{
+        return getString(R.string.results_view_text_result, userName, userResult.toString(), getUserTime())
+    }
+
     private fun getUserTime() : String{
-        val tsLong = System.currentTimeMillis() / 1000
-        val ts = tsLong.toString()
+        val currentTime = System.currentTimeMillis() / 1000
         var spendTime = 0L
-        userTime?.let {
-         spendTime = tsLong-it
+        userTime?.let {startTime ->
+         spendTime = currentTime - startTime
         }
-
-
-
         return spendTime.toString()
+    }
+
+    private fun finishQuiz(){
+        val dialog = ProgressDialog(this)
+        dialog.setTitle(getString(R.string.results_view_test_finished))
+        dialog.show()
+        Handler().postDelayed({finish()}, 2000L)
     }
 }
