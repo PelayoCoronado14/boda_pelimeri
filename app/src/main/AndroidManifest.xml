@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.testboda">
+    package="com.pelayoness.testboda">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestBoda">
         <activity
-            android:name=".views.MainActivity"
+            android:name="com.pelayoness.testboda.views.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">
@@ -21,13 +21,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.QuizQuestionsActivity"
+            android:name="com.pelayoness.testboda.views.QuizQuestionsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">
         </activity>
         <activity
-            android:name=".views.QuizResultsActivity"
+            android:name="com.pelayoness.testboda.views.QuizResultsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">

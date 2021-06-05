@@ -1,22 +1,20 @@
-package com.example.testboda.views
+package com.pelayoness.testboda.views
 
 import android.app.ProgressDialog
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testboda.R
-import com.example.testboda.entities.Constants.KEY_QUESTION_LIST
-import com.example.testboda.entities.Constants.KEY_TIMESTAMP
-import com.example.testboda.entities.Constants.KEY_USER_NAME
-import com.example.testboda.entities.Constants.SENDER_EMAIL
-import com.example.testboda.entities.Constants.SENDER_PASSWORD
-import com.example.testboda.entities.Question
-import com.example.testboda.mail.GMailSender
-import java.sql.Time
+import com.pelayoness.testboda.R
+import com.pelayoness.testboda.entities.Constants.KEY_QUESTION_LIST
+import com.pelayoness.testboda.entities.Constants.KEY_TIMESTAMP
+import com.pelayoness.testboda.entities.Constants.KEY_USER_NAME
+import com.pelayoness.testboda.entities.Constants.SENDER_EMAIL
+import com.pelayoness.testboda.entities.Constants.SENDER_PASSWORD
+import com.pelayoness.testboda.entities.Question
+import com.pelayoness.testboda.mail.GMailSender
 
 class QuizResultsActivity :AppCompatActivity(){
     private var userName : String? = null
@@ -79,8 +77,8 @@ class QuizResultsActivity :AppCompatActivity(){
 
     private fun sendResultsByEmail(){
         val dialog = ProgressDialog(this)
-        dialog.setTitle(getString(R.string.results_view_dialog_title))
-        dialog.setMessage(getString(R.string.results_view_dialog_subtitle))
+        dialog.setTitle(getString(R.string.results_view_test_finished))
+        dialog.setMessage(getString(R.string.results_view_dialog_title))
         dialog.show()
         val sender = Thread(Runnable {
             try {
@@ -108,9 +106,8 @@ class QuizResultsActivity :AppCompatActivity(){
     }
 
     private fun finishQuiz(){
-        val dialog = ProgressDialog(this)
-        dialog.setTitle(getString(R.string.results_view_test_finished))
-        dialog.show()
-        Handler().postDelayed({finish()}, 2000L)
+        Handler().postDelayed({
+            finish()
+        }, 2000L)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.testboda.views
+package com.pelayoness.testboda.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatEditText
-import com.example.testboda.R
-import com.example.testboda.entities.Constants.KEY_TIMESTAMP
-import com.example.testboda.entities.Constants.KEY_USER_NAME
+import com.pelayoness.testboda.R
+import com.pelayoness.testboda.entities.Constants.KEY_TIMESTAMP
+import com.pelayoness.testboda.entities.Constants.KEY_USER_NAME
 
 class MainActivity : AppCompatActivity() {
 

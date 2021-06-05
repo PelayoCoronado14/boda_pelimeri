@@ -1,4 +1,4 @@
-package com.example.testboda.mail;
+package com.pelayoness.testboda.mail;
 
 /**
  * Created by Vishal on 6/20/2017.

@@ -1,4 +1,4 @@
-package com.example.testboda.mail;
+package com.pelayoness.testboda.mail;
 import android.util.Log;
 
 import javax.activation.DataHandler;
@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.Security;
-import java.security.acl.LastOwnerException;
 import java.util.Properties;
 
 /**

@@ -1,4 +1,4 @@
-package com.example.testboda.views
+package com.pelayoness.testboda.views
 
 import android.content.Intent
 import android.graphics.Typeface
@@ -9,12 +9,12 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.testboda.R
-import com.example.testboda.entities.Constants
-import com.example.testboda.entities.Constants.KEY_QUESTION_LIST
-import com.example.testboda.entities.Constants.KEY_TIMESTAMP
-import com.example.testboda.entities.Constants.KEY_USER_NAME
-import com.example.testboda.entities.Question
+import com.pelayoness.testboda.R
+import com.pelayoness.testboda.entities.Constants
+import com.pelayoness.testboda.entities.Constants.KEY_QUESTION_LIST
+import com.pelayoness.testboda.entities.Constants.KEY_TIMESTAMP
+import com.pelayoness.testboda.entities.Constants.KEY_USER_NAME
+import com.pelayoness.testboda.entities.Question
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener  {
 

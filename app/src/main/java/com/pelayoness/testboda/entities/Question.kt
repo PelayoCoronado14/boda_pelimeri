@@ -1,4 +1,4 @@
-package com.example.testboda.entities
+package com.pelayoness.testboda.entities
 
 import android.os.Parcel
 import android.os.Parcelable

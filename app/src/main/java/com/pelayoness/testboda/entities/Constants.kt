@@ -1,6 +1,6 @@
-package com.example.testboda.entities
+package com.pelayoness.testboda.entities
 
-import com.example.testboda.R
+import com.pelayoness.testboda.R
 
 object Constants {
     const val KEY_QUESTION_LIST: String = "key_question_list"

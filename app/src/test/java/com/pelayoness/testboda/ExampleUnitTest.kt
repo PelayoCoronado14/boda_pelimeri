@@ -1,4 +1,4 @@
-package com.example.testboda
+package com.pelayoness.testboda
 
 import org.junit.Test
 
