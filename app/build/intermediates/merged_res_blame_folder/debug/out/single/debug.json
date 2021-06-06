@@ -4,6 +4,10 @@
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxxhdpi/ic_launcher_pm_4.png"
     },
     {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_pm_4.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_pm_4.png"
+    },
+    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable_selected_option_border_bg.xml.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable/selected_option_border_bg.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/font_dancing_script.ttf.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/font/dancing_script.ttf"
     },
     {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_pm.png.flat",
@@ -44,70 +52,6 @@
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_pm_circle.png"
     },
     {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_pm.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_pm.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_pm_4_circle.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxxhdpi/ic_launcher_pm_4_circle.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/font_welcome_font.xml.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/font/welcome_font.xml"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_trophy.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-xhdpi/ic_trophy.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_trophy.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-hdpi/ic_trophy.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_pm_4_circle.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_pm_4_circle.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-hdpi_img_bg.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-hdpi/img_bg.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_pm_4.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-hdpi/ic_launcher_pm_4.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_pm_circle.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-hdpi/ic_launcher_pm_circle.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable_default_option_border_bg.xml.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable/default_option_border_bg.xml"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bg.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-hdpi/ic_bg.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_pm_4_circle.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_pm_4_circle.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_pm_4.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_pm_4.png"
-    },
-    {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/font_dancing_script.ttf.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/font/dancing_script.ttf"
-    },
-    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_pm_4.png.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_pm_4.png"
     },
@@ -124,16 +68,24 @@
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/layout/activity_mainold.xml"
     },
     {
-        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_bg.png.flat",
-        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-xxhdpi/ic_bg.png"
-    },
-    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/layout_activity_quiz_questions.xml.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/layout/activity_quiz_questions.xml"
     },
     {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_bg.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-xxhdpi/ic_bg.png"
+    },
+    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_pm.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_pm.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
@@ -144,8 +96,20 @@
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_pm_4_circle.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxxhdpi/ic_launcher_pm_4_circle.png"
+    },
+    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_bg.png.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-xhdpi/ic_bg.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/font_welcome_font.xml.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/font/welcome_font.xml"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_pm_4_circle.png.flat",
@@ -154,6 +118,10 @@
     {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_trophy.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-xhdpi/ic_trophy.png"
     },
     {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_pm.png.flat",
@@ -172,6 +140,18 @@
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_trophy.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-hdpi/ic_trophy.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_pm_4_circle.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xxhdpi/ic_launcher_pm_4_circle.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-hdpi_img_bg.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-hdpi/img_bg.png"
+    },
+    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_pm_circle.png.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_pm_circle.png"
     },
@@ -180,11 +160,31 @@
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_pm_4.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-hdpi/ic_launcher_pm_4.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_pm_circle.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-hdpi/ic_launcher_pm_circle.png"
+    },
+    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_pm.png.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_pm.png"
     },
     {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable_default_option_border_bg.xml.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable/default_option_border_bg.xml"
+    },
+    {
         "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bg.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/drawable-hdpi/ic_bg.png"
+    },
+    {
+        "merged": "/Users/poco/AndroidProjects/boda_pelimeri/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_pm_4_circle.png.flat",
+        "source": "/Users/poco/AndroidProjects/boda_pelimeri/app/src/main/res/mipmap-xhdpi/ic_launcher_pm_4_circle.png"
     }
 ]
