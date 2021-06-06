@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         button.setOnClickListener {
-            if (textInput.text.toString().isEmpty()) {
+            if (textInput.text.toString().isEmpty() || textInput.text.toString().trim().isEmpty()) {
                 Toast.makeText(this@MainActivity, getString(R.string.main_view_toast_text), Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this@MainActivity, QuizQuestionsActivity::class.java)

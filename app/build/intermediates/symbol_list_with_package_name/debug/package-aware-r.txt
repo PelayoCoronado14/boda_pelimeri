@@ -2284,11 +2284,6 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_pm
-mipmap ic_launcher_pm_2
-mipmap ic_launcher_pm_2_circle
-mipmap ic_launcher_pm_2circle
-mipmap ic_launcher_pm_3
-mipmap ic_launcher_pm_3_circle
 mipmap ic_launcher_pm_4
 mipmap ic_launcher_pm_4_circle
 mipmap ic_launcher_pm_circle
