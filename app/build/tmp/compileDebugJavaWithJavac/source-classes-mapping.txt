@@ -1,8 +1,0 @@
-com/pelayoness/testboda/mail/GMailSender.java
- com.pelayoness.testboda.mail.GMailSender
- com.pelayoness.testboda.mail.GMailSender$ByteArrayDataSource
-com/pelayoness/testboda/mail/JSSEProvider.java
- com.pelayoness.testboda.mail.JSSEProvider
- com.pelayoness.testboda.mail.JSSEProvider$1
-com/pelayoness/testboda/BuildConfig.java
- com.pelayoness.testboda.BuildConfig
