@@ -76,9 +76,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/poco
 	android:label
 		ADDED from /Users/poco/AndroidProjects/boda_pelimeri/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from /Users/poco/AndroidProjects/boda_pelimeri/app/src/main/AndroidManifest.xml:10:9-58
+		ADDED from /Users/poco/AndroidProjects/boda_pelimeri/app/src/main/AndroidManifest.xml:10:9-60
 	android:icon
-		ADDED from /Users/poco/AndroidProjects/boda_pelimeri/app/src/main/AndroidManifest.xml:8:9-53
+		ADDED from /Users/poco/AndroidProjects/boda_pelimeri/app/src/main/AndroidManifest.xml:8:9-48
 	android:allowBackup
 		ADDED from /Users/poco/AndroidProjects/boda_pelimeri/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
