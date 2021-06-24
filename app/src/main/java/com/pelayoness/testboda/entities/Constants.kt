@@ -19,7 +19,7 @@ object Constants {
             R.string.questionary_question_1_answer_3,
             R.string.questionary_question_1_answer_4,
             0,
-            2
+            3
         )
 
         val que2 = Question(
@@ -31,7 +31,7 @@ object Constants {
             R.string.questionary_question_2_answer_3,
             R.string.questionary_question_2_answer_4,
             0,
-                1
+                2
         )
 
         val que3 = Question(
@@ -43,7 +43,7 @@ object Constants {
             R.string.questionary_question_3_answer_3,
             R.string.questionary_question_3_answer_4,
             0,
-                0
+                1
         )
 
         val que4 = Question(
@@ -55,7 +55,7 @@ object Constants {
             R.string.questionary_question_4_answer_3,
             R.string.questionary_question_4_answer_4,
                 0,
-                0
+                2
         )
 
         val que5 = Question(
@@ -67,7 +67,7 @@ object Constants {
             R.string.questionary_question_5_answer_3,
             R.string.questionary_question_5_answer_4,
                 0,
-                0
+                4
         )
 
         val que6 = Question(
@@ -79,7 +79,7 @@ object Constants {
             R.string.questionary_question_6_answer_3,
             R.string.questionary_question_6_answer_4,
                 0,
-                0
+                4
         )
 
         val que7 = Question(
@@ -91,7 +91,7 @@ object Constants {
             R.string.questionary_question_7_answer_3,
             R.string.questionary_question_7_answer_4,
                 0,
-                0
+                1
         )
 
         val que8 = Question(
@@ -103,7 +103,7 @@ object Constants {
             R.string.questionary_question_8_answer_3,
             R.string.questionary_question_8_answer_4,
                 0,
-                0
+                3
         )
 
         val que9 = Question(
@@ -115,7 +115,7 @@ object Constants {
             R.string.questionary_question_9_answer_3,
             R.string.questionary_question_9_answer_4,
                 0,
-                0
+                3
         )
 
         val que10 = Question(
@@ -127,7 +127,7 @@ object Constants {
             R.string.questionary_question_10_answer_3,
             R.string.questionary_question_10_answer_4,
                 0,
-                0
+                2
         )
 
         val questionList = ArrayList<Question>()
