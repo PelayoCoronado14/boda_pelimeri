@@ -23,7 +23,7 @@
     <string name="questionary_question_3_answer_2">La bella y la bestia</string>
     <string name="questionary_question_3_answer_3">Paranormal Activity 3</string>
     <string name="questionary_question_3_answer_4">War horse</string>
-    <string name="questionary_question_4_title">¿Quien aprobó a la primera el teórico de conducir?</string>
+    <string name="questionary_question_4_title">¿Quién aprobó a la primera el teórico de conducir?</string>
     <string name="questionary_question_4_answer_1">Ambos</string>
     <string name="questionary_question_4_answer_2">Ninguno</string>
     <string name="questionary_question_4_answer_3">Meriel</string>
@@ -33,13 +33,13 @@
     <string name="questionary_question_5_answer_2">Corviknight</string>
     <string name="questionary_question_5_answer_3">Jolteon</string>
     <string name="questionary_question_5_answer_4">Tyranitar</string>
-    <string name="questionary_question_6_title">¿Dónde estuvimos apunto de perder un avión?</string>
+    <string name="questionary_question_6_title">¿Dónde estuvimos a punto de perder un avión?</string>
     <string name="questionary_question_6_answer_1">Las Vegas</string>
     <string name="questionary_question_6_answer_2">Oporto</string>
     <string name="questionary_question_6_answer_3">Roma</string>
     <string name="questionary_question_6_answer_4">Bangkok</string>
     <string name="questionary_question_7_title">¿De qué NO nos hemos disfrazado en carnaval?</string>
-    <string name="questionary_question_7_answer_1">Aladdin y Jasmine</string>
+    <string name="questionary_question_7_answer_1">Piratas</string>
     <string name="questionary_question_7_answer_2">Romanos</string>
     <string name="questionary_question_7_answer_3">Jugador NFL y Cheerleader</string>
     <string name="questionary_question_7_answer_4">Pitufos</string>
@@ -53,7 +53,7 @@
     <string name="questionary_question_9_answer_2">Sofá de casa</string>
     <string name="questionary_question_9_answer_3">Torre Eiffel</string>
     <string name="questionary_question_9_answer_4">Tronchón</string>
-    <string name="questionary_question_10_title">¿Dónde queriamos ir de luna de miel antes del bicho?</string>
+    <string name="questionary_question_10_title">¿Dónde queríamos ir de luna de miel antes del bicho?</string>
     <string name="questionary_question_10_answer_1">Maldivas</string>
     <string name="questionary_question_10_answer_2">Japón</string>
     <string name="questionary_question_10_answer_3">Bali</string>

@@ -29,7 +29,7 @@ class QuizResultsActivity :AppCompatActivity(){
         getExtras()
         getResults()
         setText()
-        setListeners()
+        sendEmailAndFinish()
     }
 
     override fun onBackPressed() {
@@ -68,25 +68,18 @@ class QuizResultsActivity :AppCompatActivity(){
         }
     }
 
-    private fun setListeners(){
-        findViewById<Button>(R.id.questionary_results_button).setOnClickListener{
-            sendResultsByEmail()
-            finishQuiz()
-        }
-    }
-
     private fun sendResultsByEmail(){
         val dialog = ProgressDialog(this)
         dialog.setTitle(getString(R.string.results_view_test_finished))
-        dialog.setMessage(getString(R.string.results_view_dialog_title))
         dialog.show()
         val sender = Thread(Runnable {
             try {
                 val sender = GMailSender(SENDER_EMAIL, SENDER_PASSWORD)
                 sender.sendMail(getSubject(), answeredList, SENDER_EMAIL, SENDER_EMAIL)
                 dialog.dismiss()
+                finish()
             } catch (e: Exception) {
-                Log.e("mylog", "Error: " + e.message)
+                Log.e("sendResultsByEmail", "Error: " + e.message)
             }
         })
         sender.start()
@@ -105,9 +98,9 @@ class QuizResultsActivity :AppCompatActivity(){
         return spendTime.toString()
     }
 
-    private fun finishQuiz(){
+    private fun sendEmailAndFinish(){
         Handler().postDelayed({
-            finish()
+            sendResultsByEmail()
         }, 2000L)
     }
 }
